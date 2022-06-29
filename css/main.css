@@ -1,0 +1,51 @@
+.result__toggle-favorite {
+    position: static;
+    top: 0.3rem;
+    right: 0.3rem;
+    border: none;
+    color: black;
+    text-decoration: none;
+    padding: 0.4rem;
+    font-family: Oxygen;
+  }
+
+  .favorite__avatar {
+    height: 5rem;
+    margin: 0.3rem;
+  }
+
+  /* Favorites */
+.favorites {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .favorite {
+    transition: transform 0.3s ease-out;
+  }
+
+  /* Transitions */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.9s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.list-move, /* apply transition to moving elements */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.9s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
